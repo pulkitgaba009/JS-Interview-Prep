@@ -7,19 +7,18 @@
 
 // //     for ( let i = 0 ;i < n ;i++){
 // //      arr3.push(arr1[i]);
-// //      arr3.push(arr2[i]);   
+// //      arr3.push(arr2[i]);
 // //     }
-    
+
 // //     console.log(arr3);
 // // }
 
 // // shuffle([2,5,1,3,4,7],3)
 
-
 // var findMaxConsecutiveOnes = function(nums) {
 //     let count = 0;
 //     let maxReps =0;
-    
+
 //     for(let i=0;i<nums.length;i++){
 //         if(nums[i]===1){
 //             count++;
@@ -38,19 +37,79 @@
 // // findMaxConsecutiveOnes([1,0,1,1,0,1])
 // findMaxConsecutiveOnes([1,1,0,1,1,1])
 
+// var isPalindrome = function(x) {
+//     let number = x ;
+//     let digit = 0 ;
+//     let reversed = 0;
 
-var isPalindrome = function(x) {
-    let number = x ;
-    let digit = 0 ;
-    let reversed = 0;
+//     while ( number > 0 ){
+//         digit = number % 10 ;
+//         reversed = (reversed * 10) + digit ;
+//         number = Math.floor(number/10) ;
+//     }
 
-    while ( number > 0 ){
-        digit = number % 10 ;
-        reversed = (reversed * 10) + digit ;
-        number = Math.floor(number/10) ;
-    }
+//     console.log(reversed);
+// };
 
-    console.log(reversed);    
-};
+// isPalindrome(121)
 
-isPalindrome(121)
+// var kidsWithCandies = function(candies, extraCandies) {
+//     const max = Math.max(...candies);
+//     let res = [];
+
+//     for ( let i = 0 ;i <candies.length ;i++ ){
+//         console.log("Extra : ",candies[i] + extraCandies);
+//         if ( candies[i] + extraCandies >= max ){
+//             res.push(true);
+//         }
+//         else{
+//             res.push(false);
+//         }
+//     }
+//     console.log(res);
+
+//     return res;
+// };
+
+// kidsWithCandies([2,3,5,1,3],3)
+
+// /**
+//  * @param {string[]} operations
+//  * @return {number}
+//  */
+// var finalValueAfterOperations = function (operations) {
+//   let finalValue = 0;
+
+//   for (let i = 0; i < operations.length; i++) {
+//     switch (operations[i]) {
+//       case "++X":
+//         ++finalValue;
+//         break;
+
+//       case "X++":
+//         finalValue++;
+//         break;
+
+//       case "--X":
+//         --finalValue;
+//         break;
+
+//       case "X--":
+//         finalValue--;
+//         break;
+//     }
+//   }
+// };
+
+// finalValueAfterOperations(["--X", "X++", "X++"]);
+
+// var defangIPaddr = function(address) {
+//     console.log();
+// };
+
+// defangIPaddr("1.1.1.1")
+
+// defangIPaddr("1.1.1.1")
+
+
+console.log();
